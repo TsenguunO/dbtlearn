@@ -23,5 +23,7 @@ models:
 
 vars:
   surrogate_key_treat_nulls_as_empty_strings: true
+# +post-hook:
+#   - "GRANT SELECT ON {{ this }} TO ROLE REPORTER"
 # .\venv\Scripts\Activate.ps1
 #dbt docs generate
